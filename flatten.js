@@ -2,8 +2,9 @@ function flatten(elements) {
           let ash = [] ;
         for(var i=0;i<elements.length;i++)
         {
-                  if(elements[i].length!==1)
-                  ash=ash.concat(flatten(elements))
+                  var val= elements[i];
+                  if(typeof(val)!=="number")
+                  ash=ash.concat(flatten(val))
                   else
                   ash.push(elements[i])
         }
