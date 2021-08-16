@@ -3,7 +3,7 @@ function flatten(elements) {
         for(var i=0;i<elements.length;i++)
         {
                   var val= elements[i];
-                  if(typeof(val)!=="number")
+                  if(Array.isArray(val))
                   ash=ash.concat(flatten(val))
                   else
                   ash.push(elements[i])
