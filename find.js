@@ -20,9 +20,6 @@ function find(element,cb,check) {
           }
           return undefined;
       }
-  function cb(check,check2){
-            if(check==check2)
-            return true;
-  }
-      export{find,cb};
+ 
+      export{find};
      

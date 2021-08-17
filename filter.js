@@ -18,8 +18,5 @@ function filter(element,cb,check) {
     }
     return arr;
 }
-function cb(check,check2){
-      if(check==check2)
-      return true;
-}
-export{filter,cb};
+
+export{filter};
